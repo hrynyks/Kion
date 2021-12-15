@@ -1,0 +1,22 @@
+.built {
+    padding-bottom: 150px;
+
+    &__title {
+        font-family: 'Times New Roman', sans-serif;
+        font-size: toRem(58);
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 86px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

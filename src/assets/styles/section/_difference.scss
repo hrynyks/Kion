@@ -1,0 +1,85 @@
+.difference {
+    padding: 150px 0;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        max-width: 381px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-family: 'Times New Roman', sans-serif;
+        font-size: toRem(60);
+        line-height: 60px;
+        letter-spacing: 1px;
+        max-width: 285px;
+        width: 100%;
+        margin-bottom: 43px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+
+        &-sml {
+            font-size: toRem(11);
+            display: block;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+
+            @include a (tablet-xl) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__descr {
+        font-size: toRem(18);
+        line-height: 26px;
+        margin-bottom: 24px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 35px;
+        margin-bottom: 24px;
+
+        @include a (tablet-xl) {
+            align-items: center;
+            margin-left: 0;
+        }
+    }
+
+    &__item {
+        font-size: toRem(18);
+        color: $medium-color;
+    }
+
+    &__link {
+        font-size: toRem(18);
+        font-weight: 700;
+        color: $medium-color;
+    }
+}

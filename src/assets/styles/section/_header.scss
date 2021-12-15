@@ -1,0 +1,62 @@
+.header {
+    padding: 32px 0;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        gap: 69px;
+
+        @include a (tablet-xl) {
+            gap: 40px;
+        }
+    }
+
+    &__item {
+        &-link {
+            color: $medium-color;
+
+            &:hover {
+                color: $dark-color;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__btn {
+        &-left {
+            width: 56px;
+            height: 56px;
+            border: 1px solid $medium-color;
+            border-radius: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-right {
+            font-size: toRem(17);
+            color: $light-color;
+            width: 177px;
+            line-height: 56px;
+            text-align: center;
+            background-color: $dark-color;
+            border-radius: 56px;
+        }
+    }
+}
